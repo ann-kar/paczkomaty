@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../css/main.css" rel="stylesheet">
-    <script src="index.js" defer></script>
-    <title>Envelo</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/main.css" rel="stylesheet">
+  <script src="index.js" defer></script>
+  <title>Envelo</title>
 </head>
+
 <body>
-    
+  <main class="pickup">
+    <h1 class="h1 pickup-h1">ENVELO</h1>
+    <p class="text pickup-text">
+      Możesz mieć swoją przesyłkę w kilkanaście sekund.
+      Rozpocznij, klikając w przycisk.
+    </p>
+    <form class="form pickup-form">
+      <label for="phone">Numer telefonu</label>
+      <input class="input input-phone" name="phone" type="number"></input>
+      <label for="code">Kod odbioru</label>
+      <input class="input input-code" name="code" type="number"></input>
+      <button class="button button-start button-submit">ODBIERZ PACZKĘ</button>
+    </form>
+    <div class="modal pickup-modal">
+      <h2 class="h2 pickup-h2">Paczka odebrana!</h2>
+      <h3 class="h3 pickup-h3">
+        Zrobiłeś to w czasie 10 sekund!
+        Czy możemy zrobić dla Ciebie coś jeszcze?
+      </h3>
+      <button class="button button-exit">To wszystko na dziś</button>
+      <button class="button button-next">Odbierz kolejną paczkę</button>
+    </div>
+  </main>
 </body>
+
 </html>

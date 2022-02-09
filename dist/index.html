@@ -12,27 +12,35 @@
 
 <body>
   <main class="pickup">
-    <h1 class="h1 pickup-h1">ENVELO</h1>
+    <h1 class="header1 pickup-header1">ENVELO</h1>
     <p class="text pickup-text">
       Możesz mieć swoją przesyłkę w kilkanaście sekund.
       Rozpocznij, klikając w przycisk.
     </p>
     <form class="form pickup-form">
-      <label for="phone">Numer telefonu</label>
-      <input class="input input-phone" name="phone" type="number"></input>
-      <label for="code">Kod odbioru</label>
-      <input class="input input-code" name="code" type="number"></input>
-      <button class="button button-start button-submit">ODBIERZ PACZKĘ</button>
+      <div class="inputCnt">
+        <label for="phone">Numer telefonu</label>
+        <input class="input input-phone" name="phone" type="number"></input>
+        <small class="form-message pickup-form-message"></small>
+      </div>
+      <div class="inputCnt">
+        <label for="code">Kod odbioru</label>
+        <input class="input input-code" name="code" type="number"></input>
+        <small class="form-message pickup-form-message"></small>
+      </div>
+      <button class="button button-start button-submit">Odbierz paczkę</button>
+      <small class="form-message pickup-form-message"></small>
     </form>
     <div class="modal pickup-modal">
-      <h2 class="h2 pickup-h2">Paczka odebrana!</h2>
-      <h3 class="h3 pickup-h3">
+      <h2 class="header2 pickup-header2">Paczka odebrana!</h2>
+      <h3 class="header3 pickup-header3">
         Zrobiłeś to w czasie 10 sekund!
         Czy możemy zrobić dla Ciebie coś jeszcze?
       </h3>
       <button class="button button-exit">To wszystko na dziś</button>
       <button class="button button-next">Odbierz kolejną paczkę</button>
     </div>
+    <div class="modal-overlay pickup-modal-overlay"></div>
   </main>
 </body>
 

@@ -19,17 +19,18 @@
     </p>
     <form class="form">
       <div class="inputCnt">
-        <label class="label" for="phone">Numer telefonu</label>
-        <input class="input input-phone" name="phone" type="number"></input>
+        <label class="label" for="pickupPhone">Numer telefonu</label>
+        <input class="input input-phone" name="pickupPhone" id="pickupPhone" type="number"></input>
         <small class="form-message"></small>
       </div>
       <div class="inputCnt">
-        <label class="label" for="code">Kod odbioru</label>
-        <input class="input input-code" name="code" type="number"></input>
+        <label class="label" for="pickupCode">Kod odbioru</label>
+        <input class="input input-code" name="pickupCode" id="pickupCode" type="number"></input>
         <small class="form-message"></small>
       </div>
       <div class="buttonCnt">
-        <button class="button button-start-submit">Odbierz paczkę</button>
+        <button class="button button-start">Odbierz paczkę</button>
+        <button class="button button-submit" disabled>Odbierz paczkę</button>
         <small class="form-message"></small>
       </div>
     </form>

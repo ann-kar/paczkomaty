@@ -1,0 +1,7 @@
+.pickup .text {
+    width: 100%;
+    white-space: pre-line;
+    text-align: center;
+    padding: 1rem;
+    padding-top: 0;
+}

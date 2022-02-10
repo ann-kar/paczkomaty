@@ -1,0 +1,52 @@
+.pickup .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 30rem;
+}
+
+.pickup .inputCnt, .pickup .buttonCnt {
+    width: 45%;
+    max-width: 12rem;
+}
+
+.pickup .inputCnt {
+    visibility: hidden;
+}
+
+.pickup .inputCnt>*, .pickup .buttonCnt>* {
+    width: 100%;
+}
+
+.pickup .inputCnt .label {
+    font-size: 0.8rem;
+}
+
+.pickup .inputCnt .input {
+    max-width: 12rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    text-align: center;
+    background: var(--light-color);
+}
+
+.pickup .form-message {
+    font-size: 0.7rem;
+    line-height: 0.8rem;
+}
+
+.pickup .button-start, .pickup .button-submit {
+    /* max-width: 12rem;
+    min-width: 7rem;
+    min-height: 3rem;
+    background: var(--header-color);
+    font-size: 1.1rem;
+    padding: 1rem;
+    margin: 2.5rem 0;
+    display: block; */
+}
+
+.pickup .button-submit {
+    display: none;
+}

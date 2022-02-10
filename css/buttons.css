@@ -1,0 +1,10 @@
+.button {
+    max-width: 12rem;
+    min-width: 7rem;
+    min-height: 3rem;
+    background: var(--header-color);
+    font-size: 1.1rem;
+    padding: 1rem;
+    margin: 2.5rem 0;
+    display: block;
+}

@@ -88,7 +88,12 @@
     background: var(--light-color);
 }
 
-.pickup .button {
+.pickup .form-message {
+    font-size: 0.7rem;
+    line-height: 0.8rem;
+}
+
+.pickup .button-start, .pickup .button-submit {
     max-width: 12rem;
     min-width: 7rem;
     min-height: 3rem;
@@ -96,6 +101,11 @@
     font-size: 1.1rem;
     padding: 1rem;
     margin: 2.5rem 0;
+    display: block;
+}
+
+.pickup .button-submit {
+    display: none;
 }
 
 .pickup .modal {

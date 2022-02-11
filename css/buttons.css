@@ -2,9 +2,26 @@
     max-width: 12rem;
     min-width: 7rem;
     min-height: 3rem;
-    background: var(--header-color);
-    font-size: 1.1rem;
+    display: block;
     padding: 1rem;
     margin: 2.5rem 0;
-    display: block;
+    background: var(--header-color);
+    border: 1px solid var(--header-color);
+    color: var(--white--translucent);
+    font-size: 1.2rem;
+    border-radius: var(--radius);
+    transition: 0.3s;
+}
+
+.button:disabled, .button:disabled:hover {
+    background: var(--bg-color--light);
+    opacity: 0.6;
+    color: var(--white);
+    border: 1px solid var(--bg-color--light);
+}
+
+.button:hover {
+    background: var(--white);
+    color: var(--header-color);
+    border: 1px solid var(--header-color);
 }

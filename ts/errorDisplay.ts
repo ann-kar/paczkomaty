@@ -1,4 +1,3 @@
-
 import { validateInput } from './inputEvents.js';
 
 const toggleErrors = (input: HTMLInputElement): void => {
@@ -6,7 +5,7 @@ const toggleErrors = (input: HTMLInputElement): void => {
 };
 
 const displayError = (el: HTMLElement): void => {
-    if (el.nextElementSibling) {
+    if (el.nextElementSibling && Array.from(el.nextElementSibling.classList).includes("form-message")) {
         switch (el.id) {
             case 'pickupPhone':
                 (el.nextElementSibling as HTMLElement).innerText = 'Numer telefonu powinien składać się z 9 cyfr.';
@@ -16,6 +15,8 @@ const displayError = (el: HTMLElement): void => {
                 break;
             case 'pickupSubmit':
                 (el.nextElementSibling as HTMLElement).innerText = 'Proszę wypełnić poprawnie wszystkie pola.';
+            default:
+                break;
         }
     }
 }

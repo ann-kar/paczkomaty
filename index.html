@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/main.css" rel="stylesheet">
+  <script src="index.js" type="module" defer></script>
+  <title>Envelo</title>
+</head>
+
+<body>
+  <main class="pickup">
+    <h1 class="header1">ENVELO</h1>
+    <p class="text">
+      Możesz mieć swoją przesyłkę w&nbsp;kilkanaście sekund.
+      Rozpocznij, klikając w&nbsp;przycisk.
+    </p>
+    <form class="form">
+      <div class="inputCnt">
+        <label class="label" for="pickupPhone">Numer telefonu</label>
+        <input class="input input-phone" name="pickupPhone" id="pickupPhone" type="number"></input>
+        <small class="form-message"></small>
+      </div>
+      <div class="inputCnt">
+        <label class="label" for="pickupCode">Kod odbioru</label>
+        <input class="input input-code" name="pickupCode" id="pickupCode" type="number"></input>
+        <small class="form-message"></small>
+      </div>
+      <div class="buttonCnt">
+        <button class="button button-start">Odbierz paczkę</button>
+        <button class="button button-submit" id="pickupSubmit" disabled>Odbierz paczkę</button>
+        <small class="form-message"></small>
+      </div>
+    </form>
+    <div class="modal">
+      <h2 class="header2">Paczka odebrana!</h2>
+      <h3 class="header3">
+        Zrobiłeś to w&nbsp;czasie 10&nbsp;sekund!
+        Czy możemy zrobić dla Ciebie coś jeszcze?
+      </h3>
+      <div class="buttonCnt">
+        <button class="button button-exit">To wszystko na&nbsp;dziś</button>
+        <button class="button button-next">Odbierz kolejną paczkę</button>
+      </div>
+    </div>
+    <div class="modal-overlay"></div>
+  </main>
+</body>
+
+</html>

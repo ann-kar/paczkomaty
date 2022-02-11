@@ -1,16 +1,37 @@
 .pickup .modal {
-    max-width: 30rem;
+    max-width: 40rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
     z-index: 3;
-    border: 1px solid var(--font-color);
-    background: var(--bg-color);
-    padding: 1rem;
-    display: none;
+    border-radius: var(--radius);
+    border: 1px solid var(--bg-color--light);
+    background: var(--white--off);
+    box-shadow: 1px 1px 10px var(--bg-color--light);
+    padding: 1.5rem;
+}
+
+.pickup .modal .buttonCnt {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 40rem;
+    justify-content: center;
+}
+
+.pickup .modal .button {
+    margin: 1.5rem 1rem;
+    width: 40%;
+}
+
+@media screen and (max-width: 510px) {
+    .pickup .modal .button {
+        margin: 1rem 2rem;
+        width: 70%;
+    }
 }
 
 .pickup .modal-overlay {
@@ -20,11 +41,6 @@
     width: 100vw;
     height: 100vh;
     z-index: 2;
-    background: var(--font-color);
-    opacity: 0.2;
-    display: none;
-}
-
-.pickup .modal .button {
-    width: 42%;
+    background: var(--white--off);
+    opacity: 0.5;
 }

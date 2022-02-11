@@ -1,0 +1,14 @@
+:root {
+    font-size: 16px;
+    --radius: 4px;
+    --bg-color: #c4c4c4;
+    --header-color: #f31918;
+    --font-color: #000;
+    --white: #fff;
+    --white--translucent: rgba(255, 255, 255, 0.9);
+    --white--off: #fefefe;
+    --bg-color--dark: #343434;
+    --bg-color--light: #b8b6b6;
+    --bg-color--main: #8a8a8a;
+    --breakpoint-mobile: 500px;
+}

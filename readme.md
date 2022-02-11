@@ -1,3 +1,3 @@
 ** How to use **:
 
-Please open the project with a live server (VSCode: add the "Live Server" extension and "Open with live server" option) - a server is necessary for the ES6 modules.
+If you choose the clone the app and run it locally, please open the project with a live server (VSCode: add the "Live Server" extension and "Open with live server" option) due to the use of ES6 modules.

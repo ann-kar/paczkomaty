@@ -1,6 +1,5 @@
-
 import { submitButton, inputs } from './elements.js';
-import { validateInput, checkAllInputs } from './inputValidation';
+import { validateInput, checkAllInputs } from './inputValidation.js';
 import { toggleErrors } from './errorDisplay.js';
 import { inputStatus } from './inputStatus.js';
 import { InputNames } from './types';

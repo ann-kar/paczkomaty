@@ -5,6 +5,6 @@ type InputStatus = {
     pickupCode: boolean
 }
 
-type InputNames = keyof typeof inputStatus;
+type InputNames = keyof InputStatus;
 
 export {InputStatus, InputNames}

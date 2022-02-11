@@ -1,5 +1,3 @@
-
-
 const pickup = document.querySelector('.pickup');
 const startButton = (pickup as HTMLElement).querySelector('.button-start');
 const submitButton = (pickup as HTMLElement).querySelector('.button-submit');
@@ -13,4 +11,4 @@ const modalOverlay = (pickup as HTMLElement).querySelector('.modal-overlay');
 const nextButton = (modal as HTMLElement).querySelector('.button-next');
 const exitButton = (modal as HTMLElement).querySelector('.button-exit');
 
-export {startButton, submitButton, phoneInput, codeInput, inputCnts, inputs, modal, modalOverlay, nextButton, exitButton}
+export { startButton, submitButton, phoneInput, codeInput, inputCnts, inputs, modal, modalOverlay, nextButton, exitButton }

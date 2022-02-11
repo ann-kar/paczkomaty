@@ -12,3 +12,21 @@
     --bg-color--main: #8a8a8a;
     --breakpoint-mobile: 500px;
 }
+
+@media screen and (min-width: 1200px) {
+    :root {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    :root {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    :root {
+        font-size: 22px;
+    }
+}

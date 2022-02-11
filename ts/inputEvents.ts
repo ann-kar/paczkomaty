@@ -1,36 +1,17 @@
 
 import { submitButton, inputs } from './elements.js';
-import { validateLength, validateChars } from './validations.js';
+import { validateInput, checkAllInputs } from './inputValidation';
 import { toggleErrors } from './errorDisplay.js';
 import { inputStatus } from './inputStatus.js';
-
-const validateInput = (input: HTMLInputElement) => {
-    const val = (input.value).trim();
-    switch (input.name) {
-        case 'pickupPhone':
-            return validateLength(val, 9) && (validateChars(val));
-        case 'pickupCode':
-            return validateLength(val, 4) && (validateChars(val));
-        default:
-            return false;
-    }
-}
-
-const checkAllInputs = () => {
-    return (Object.values(inputStatus)).every(el => el === true);
-}
-
-const enableSubmitButton = () => {
-    checkAllInputs() ? submitButton?.removeAttribute('disabled') : null;
-};
+import { InputNames } from './types';
 
 const updateInputStatus = (input: HTMLInputElement) => {
-    if (input.name === 'pickupPhone' || input.name === 'pickupCode') { // TODO: TypeScript keyof typeof
+    if (Object.keys(inputStatus).some(key => key === input.name)) {
         if (validateInput(input)) {
-            inputStatus[input.name] = true;
-            enableSubmitButton();
+            inputStatus[(input.name as InputNames)] = true;
+            checkAllInputs() ? submitButton?.removeAttribute('disabled') : null;
         } else {
-            inputStatus[input.name] = false;
+            inputStatus[(input.name as InputNames)] = false;
         }
     }
 }

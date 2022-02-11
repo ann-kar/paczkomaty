@@ -1,5 +1,3 @@
-import {inputStatus} from './inputEvents.js';
-
 type InputStatus = {
     pickupPhone: boolean,
     pickupCode: boolean

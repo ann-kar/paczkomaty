@@ -12,6 +12,7 @@
     background: var(--white--off);
     box-shadow: 1px 1px 10px var(--bg-color--light);
     padding: 1.5rem;
+    display: none;
 }
 
 .pickup .modal .buttonCnt {
@@ -43,4 +44,5 @@
     z-index: 2;
     background: var(--white--off);
     opacity: 0.5;
+    display: none;
 }
